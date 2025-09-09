@@ -70,3 +70,7 @@ Configurar no arquivo admin.py
 > admin.site.register(Review)
 
 Atualiza a página admin que aparecerá uma nova sessão com o app Review
+
+Podes alterar o método self para exibir os objetos da classe Review
+    def __str__(self) -> str:
+        return f'{self.title} - {self.status}'
